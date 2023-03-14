@@ -1,0 +1,68 @@
+:root {
+  --mint: #73c8a9;
+  --dark-mint: #373b44;
+  --dark: #2e2e2e;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background-color: #73c8a9;
+  font-family: 'Press Start 2P', cursive;
+  background-image: linear-gradient(to right, var(--mint), var(--dark-mint));
+}
+
+canvas {
+  border: 5px solid var(--dark);
+  border-radius: 10px;
+  display: block;
+  margin: 50px auto;
+  box-shadow: var(--shadow);
+  background-image: url('assets/Flappy_Bird_Background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.backdrop-blur {
+  filter: blur(5px);
+}
+
+#end-menu {
+  display: none;
+  margin: 50px auto;
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 10;
+}
+
+#score-display {
+  color: #ffffff;
+  font-size: 2em;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  background-color: var(--dark);
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 15px 30px;
+  box-shadow: var(--shadow);
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  background-color: #333333;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
